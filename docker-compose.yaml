@@ -1,0 +1,42 @@
+version: "3.3"
+services:
+## compose Administrador Node Red
+  admin-node-red:
+    build:
+      context: "./"
+      dockerfile: "./Dockerfile"
+    container_name: Admin-node-red
+    restart: always
+    ports: 
+      - "1880:1880"
+    volumes:
+      - "./Administrador_Settings.js:/data/settings.js"
+      - "node-red-Adm-data:/data"
+    networks:
+      - "otalab_otalab"
+### ----------------------------------------------------------- ###
+## compose Experimentador Node Red
+  expe-node-red:
+    build:
+      context: "./"
+      dockerfile: "./Dockerfile"
+    container_name: Expe-node-red
+    restart: always
+    ports: 
+      - "1881:1880"
+    volumes:
+      - "./Experimentador_Settings.js:/data/settings.js"
+      - "node-red-Exp-data:/data"
+    networks:
+      - "otalab_otalab"
+### ----------------------------------------------------------- ###
+
+## Volumes
+volumes:
+  node-red-Adm-data:
+  node-red-Exp-data:
+
+## Networks
+networks:
+  otalab_otalab:
+    external: true
