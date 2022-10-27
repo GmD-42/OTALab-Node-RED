@@ -1101,30 +1101,6 @@
         "icon": "font-awesome/fa-upload"
     },
     {
-        "id": "08f52e9e343e9202",
-        "type": "subflow",
-        "name": "Lista Dispositivos por ID",
-        "info": "",
-        "category": "Configuração Dispositivos",
-        "in": [
-            {
-                "x": 320,
-                "y": 340,
-                "wires": []
-            }
-        ],
-        "out": [
-            {
-                "x": 1220,
-                "y": 340,
-                "wires": []
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#FFAAAA"
-    },
-    {
         "id": "35b96d0a743c4d20",
         "type": "ui_tab",
         "name": "Configurações de Rede",
@@ -7734,91 +7710,6 @@
             [
                 "7b5bfc3920d6ac95",
                 "6c3546fdd5c27648"
-            ]
-        ]
-    },
-    {
-        "id": "f994c1068bf42869",
-        "type": "function",
-        "z": "be7963d3bf13abbb",
-        "name": "function 6",
-        "func": "if(!msg.payload){\n    msg.payload = \"Verdadeiro\";\n}\nelse{\n    msg.payload = \"Falso\";\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 580,
-        "y": 620,
-        "wires": [
-            [
-                "53ae17de0f06d688"
-            ]
-        ]
-    },
-    {
-        "id": "53ae17de0f06d688",
-        "type": "debug",
-        "z": "be7963d3bf13abbb",
-        "name": "debug 70",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 800,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "39f5372230707479",
-        "type": "inject",
-        "z": "be7963d3bf13abbb",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "2",
-        "payloadType": "num",
-        "x": 330,
-        "y": 600,
-        "wires": [
-            [
-                "f994c1068bf42869"
-            ]
-        ]
-    },
-    {
-        "id": "425c6fed65e90f7d",
-        "type": "inject",
-        "z": "be7963d3bf13abbb",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 330,
-        "y": 640,
-        "wires": [
-            [
-                "f994c1068bf42869"
             ]
         ]
     },
