@@ -3897,34 +3897,6 @@
         "wires": []
     },
     {
-        "id": "fcd1ae6c35e48ee7",
-        "type": "ui_button",
-        "z": "0d994888ecbec5a9",
-        "name": "",
-        "group": "b6adb5e6150b3a91",
-        "order": 5,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Administrador",
-        "tooltip": "Tenha acesso a todas as configurações diponiveis pela API do OTALab",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "{\"tab\":\"Administrador\"}",
-        "payloadType": "json",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 120,
-        "y": 160,
-        "wires": [
-            [
-                "81f747aae08b3ad2"
-            ]
-        ]
-    },
-    {
         "id": "c8397d208eea04c2",
         "type": "comment",
         "z": "0d994888ecbec5a9",
@@ -3985,7 +3957,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 490,
+        "x": 550,
         "y": 120,
         "wires": [
             [
@@ -4013,7 +3985,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 500,
+        "x": 560,
         "y": 160,
         "wires": [
             [
@@ -4027,7 +3999,7 @@
         "z": "0d994888ecbec5a9",
         "name": "Administrador",
         "info": "",
-        "x": 450,
+        "x": 510,
         "y": 40,
         "wires": []
     },
@@ -4067,38 +4039,10 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 440,
+        "x": 500,
         "y": 80,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "e3b279cd92557989",
-        "type": "ui_button",
-        "z": "0d994888ecbec5a9",
-        "name": "",
-        "group": "b6adb5e6150b3a91",
-        "order": 3,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Experimentador ",
-        "tooltip": "Faça um Upload de um codigo .ino de forma simples. ",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "{\"tab\":\"Experimentador\"}",
-        "payloadType": "json",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 120,
-        "y": 120,
-        "wires": [
-            [
-                "81f747aae08b3ad2"
-            ]
         ]
     },
     {
@@ -4107,8 +4051,8 @@
         "z": "0d994888ecbec5a9",
         "name": "",
         "events": "all",
-        "x": 280,
-        "y": 140,
+        "x": 340,
+        "y": 180,
         "wires": [
             []
         ]
@@ -4133,7 +4077,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 500,
+        "x": 560,
         "y": 200,
         "wires": [
             [
@@ -4147,7 +4091,7 @@
         "z": "0d994888ecbec5a9",
         "name": "",
         "events": "all",
-        "x": 760,
+        "x": 820,
         "y": 280,
         "wires": [
             []
@@ -4173,7 +4117,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 490,
+        "x": 550,
         "y": 240,
         "wires": [
             [
@@ -4201,7 +4145,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 480,
+        "x": 540,
         "y": 280,
         "wires": [
             [
@@ -4229,7 +4173,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 470,
+        "x": 530,
         "y": 360,
         "wires": [
             [
@@ -4257,7 +4201,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 490,
+        "x": 550,
         "y": 320,
         "wires": [
             [
@@ -4271,7 +4215,7 @@
         "z": "0d994888ecbec5a9",
         "name": "",
         "events": "all",
-        "x": 1240,
+        "x": 1300,
         "y": 200,
         "wires": [
             []
@@ -4283,7 +4227,7 @@
         "z": "0d994888ecbec5a9",
         "name": "Go Back buttons ",
         "info": "Administrador",
-        "x": 940,
+        "x": 1000,
         "y": 40,
         "wires": []
     },
@@ -5271,7 +5215,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 470,
+        "x": 530,
         "y": 400,
         "wires": [
             [
@@ -5294,7 +5238,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1000,
+        "x": 1060,
         "y": 360,
         "wires": [
             [
@@ -5317,7 +5261,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1000,
+        "x": 1060,
         "y": 80,
         "wires": [
             [
@@ -5340,7 +5284,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1000,
+        "x": 1060,
         "y": 440,
         "wires": [
             [
@@ -5363,7 +5307,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1000,
+        "x": 1060,
         "y": 400,
         "wires": [
             [
@@ -5386,7 +5330,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 990,
+        "x": 1050,
         "y": 120,
         "wires": [
             [
@@ -5409,7 +5353,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 990,
+        "x": 1050,
         "y": 160,
         "wires": [
             [
@@ -5432,7 +5376,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 990,
+        "x": 1050,
         "y": 200,
         "wires": [
             [
@@ -5455,7 +5399,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 990,
+        "x": 1050,
         "y": 240,
         "wires": [
             [
@@ -5478,7 +5422,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 990,
+        "x": 1050,
         "y": 280,
         "wires": [
             [
@@ -5501,7 +5445,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 990,
+        "x": 1050,
         "y": 320,
         "wires": [
             [
@@ -5590,6 +5534,52 @@
         "x": 1160,
         "y": 1040,
         "wires": []
+    },
+    {
+        "id": "306960557f866cd8",
+        "type": "ui_template",
+        "z": "0d994888ecbec5a9",
+        "group": "b6adb5e6150b3a91",
+        "name": "Botão Experimentador ",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "format": "<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n    <style type=\"text/css\">\n        .fa_customBack{\n            position: absolute;\n            top: 5px;\n            left: 30px;\n            color: #FFFFF;\n        }\n        .buttonBack{\n            padding: 0;\n            background-color: #097479;\n            border-radius: 12px;\n        }\n        .button__text {\n            transition: all 0.2s;\n            position: absolute;\n            top: 1px;\n            left: 70px;\n            color: #ffffff;\n        }\n    </style>\n</head>\n\n<body>\n    <md-button class=\"buttonBack\" title=\"Voltar para Experimentador\" ng-click=\"send({'payload':'Experimentador'})\">\n        <i class=\"fa fa-cloud-upload fa_customBack fa-2x\" ></i>\n        <spam class=\"button__text\"> Experimentador</spam>\n    </md-button >\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "81f747aae08b3ad2"
+            ]
+        ]
+    },
+    {
+        "id": "a5ade417a16ee914",
+        "type": "ui_template",
+        "z": "0d994888ecbec5a9",
+        "group": "b6adb5e6150b3a91",
+        "name": "Botão Experimentador ",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "format": "<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n    <style type=\"text/css\">\n        .fa_customBack{\n            position: absolute;\n            top: 5px;\n            left: 30px;\n            color: #FFFFF;\n        }\n        .buttonBack{\n            padding: 0;\n            background-color: #097479;\n            border-radius: 12px;\n        }\n        .button__text {\n            transition: all 0.2s;\n            position: absolute;\n            top: 1px;\n            left: 70px;\n            color: #ffffff;\n        }\n    </style>\n</head>\n\n<body>\n    <md-button class=\"buttonBack\" title=\"Voltar para Administrador\" ng-click=\"send({'payload':'Administrador'})\">\n        <i class=\"fa fa-cog fa_customBack fa-2x\" ></i>\n        <spam class=\"button__text\"> Administrador</spam>\n    </md-button >\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "81f747aae08b3ad2"
+            ]
+        ]
     },
     {
         "id": "ac564eac73d5b3c5",
