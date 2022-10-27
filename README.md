@@ -2,6 +2,11 @@
 
 ## Esse projeto é uma complementação do Projeto [OTALab](https://github.com/enzocussuol/OTALab/tree/gd/dev/node-red) 
 
+### 0 Dependencies 
+   Para esse projeto funcionar são nescessários:
+   1. Ter Docker compose instalado. [Docker](https://docs.docker.com/engine/install/ubuntu/)
+   2. Ter OTALab instalado e rodando. [OTALab](https://github.com/enzocussuol/OTALab/tree/gd/dev/node-red)  
+
 ### 1 Introdução
   O OTALab-Node-RED surgiu da nesceciade de fazer uma interface para o [OTALab](https://github.com/enzocussuol/OTALab/tree/gd/dev/node-red), e com o uso da
   ferramenta do node-red, foi desenvolvida duas interface uma **Administrador** onde se tem acesso a todas as funções da api do OTALab, e uma **Experimentador** 
