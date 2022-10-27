@@ -17,7 +17,7 @@
   temos  o arquivo de inicialização dos containers.
   
 ### 3 Instalação
-  Para inicilaizar basta fazer um git clone do projeto 
+  Para inicializar basta fazer um git clone do projeto 
   `git clone https://github.com/gmdardengo/OTALab-Node-RED.git`
   E depois no terminal na pasta raiz do projeto digitar `docker-compose up`.
 
