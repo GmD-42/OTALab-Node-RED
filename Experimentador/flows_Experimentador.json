@@ -349,11 +349,11 @@
     {
         "id": "93ef745fd1be13da",
         "type": "ui_group",
-        "name": "Servicos",
+        "name": "Serviços",
         "tab": "09aa191131dbb9db",
         "order": 5,
         "disp": true,
-        "width": 20,
+        "width": "20",
         "collapse": false,
         "className": ""
     },
@@ -387,46 +387,6 @@
         "width": "20",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "2c78b0ba92f78cd4",
-        "type": "ui_spacer",
-        "z": "0d994888ecbec5a9",
-        "name": "spacer",
-        "group": "33449842d220a57b",
-        "order": 2,
-        "width": 15,
-        "height": 1
-    },
-    {
-        "id": "dc8b0b781b1b825c",
-        "type": "ui_spacer",
-        "z": "0d994888ecbec5a9",
-        "name": "spacer",
-        "group": "33449842d220a57b",
-        "order": 3,
-        "width": 15,
-        "height": 1
-    },
-    {
-        "id": "29fe1cd3d09abf2e",
-        "type": "ui_spacer",
-        "z": "0d994888ecbec5a9",
-        "name": "spacer",
-        "group": "7246bb7ca45fc30a",
-        "order": 8,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "ba02470eb3d78f59",
-        "type": "ui_spacer",
-        "z": "0d994888ecbec5a9",
-        "name": "spacer",
-        "group": "942911e5a152ccc7",
-        "order": 3,
-        "width": 15,
-        "height": 1
     },
     {
         "id": "2bd24beee43c61d9",
@@ -467,6 +427,56 @@
         "group": "b6adb5e6150b3a91",
         "order": 5,
         "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ec10ddc3212d3143",
+        "type": "ui_spacer",
+        "z": "0d994888ecbec5a9",
+        "name": "spacer",
+        "group": "2bd24beee43c61d9",
+        "order": 2,
+        "width": 18,
+        "height": 1
+    },
+    {
+        "id": "761f086a5578a327",
+        "type": "ui_spacer",
+        "z": "0d994888ecbec5a9",
+        "name": "spacer",
+        "group": "33449842d220a57b",
+        "order": 2,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "3026e5c56d36d0ff",
+        "type": "ui_spacer",
+        "z": "0d994888ecbec5a9",
+        "name": "spacer",
+        "group": "33449842d220a57b",
+        "order": 3,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "e3e0abd9ab5a255a",
+        "type": "ui_spacer",
+        "z": "0d994888ecbec5a9",
+        "name": "spacer",
+        "group": "7246bb7ca45fc30a",
+        "order": 4,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "c9d980897a990677",
+        "type": "ui_spacer",
+        "z": "0d994888ecbec5a9",
+        "name": "spacer",
+        "group": "942911e5a152ccc7",
+        "order": 4,
+        "width": 11,
         "height": 1
     },
     {
@@ -778,7 +788,7 @@
         "z": "0d994888ecbec5a9",
         "group": "7246bb7ca45fc30a",
         "name": "",
-        "order": 9,
+        "order": 5,
         "width": 0,
         "height": 0,
         "columns": [
@@ -935,9 +945,9 @@
         "id": "da4bbd3f1dd87566",
         "type": "comment",
         "z": "0d994888ecbec5a9",
-        "name": "Show Wifi Ativo e Atualiza conexões, com botão para Configuração de Rede",
+        "name": "Mostar qual configuração Wifi está  ativa",
         "info": "",
-        "x": 310,
+        "x": 190,
         "y": 160,
         "wires": []
     },
@@ -1082,12 +1092,12 @@
         "group": "942911e5a152ccc7",
         "title": "Upload: ",
         "name": "",
-        "order": 4,
+        "order": 5,
         "width": 0,
         "height": 0,
         "chunk": 256,
         "transfer": "binary",
-        "x": 570,
+        "x": 550,
         "y": 680,
         "wires": [
             [
@@ -1136,7 +1146,7 @@
         "type": "ui_text",
         "z": "0d994888ecbec5a9",
         "group": "942911e5a152ccc7",
-        "order": 5,
+        "order": 6,
         "width": 0,
         "height": 0,
         "name": "saida upload",
@@ -1158,33 +1168,7 @@
         "wires": [
             [
                 "e7f391dd4e00ccb6",
-                "82c922e914e5e008",
-                "ca3a1b8ec6796198"
-            ]
-        ]
-    },
-    {
-        "id": "ca3a1b8ec6796198",
-        "type": "trigger",
-        "z": "0d994888ecbec5a9",
-        "name": "",
-        "op1": " ",
-        "op2": " ",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "10",
-        "extend": false,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 770,
-        "y": 740,
-        "wires": [
-            [
-                "e7f391dd4e00ccb6"
+                "82c922e914e5e008"
             ]
         ]
     },
@@ -1221,7 +1205,7 @@
         "templateScope": "local",
         "className": "",
         "x": 390,
-        "y": 600,
+        "y": 620,
         "wires": [
             []
         ]
@@ -1289,8 +1273,8 @@
         "z": "0d994888ecbec5a9",
         "group": "7246bb7ca45fc30a",
         "name": "Serviços list Button",
-        "order": 6,
-        "width": "2",
+        "order": 3,
+        "width": 2,
         "height": 1,
         "format": "<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n    <style type=\"text/css\">\n        .fa_custom5{\n            position: absolute;\n            top: 5px;\n            left: 30px;\n            color: #00BFFF; \n        }\n        .button5{\n            padding: 0;\n            background-color: #097479;\n            border-radius: 12px;\n        }\n    </style>\n    <script>\n        (function(scope) {\n            var clickCounter=2;\n            scope.clickEvent = function(){\n                if (clickCounter % 2 == 0){\n                    scope.send({payload:'show'});\n                }\n                if (clickCounter% 2 > 0){\n                    scope.send({payload:'hide'});\n                }\n                clickCounter++;\n            }\n        })(scope);\n    </script>\n</head>\n\n<body>\n    <md-button class=\"button5\" title=\"SHOW, HIDE and UPDATE, lista de Serviços\" ng-click=\"clickEvent()\">\n        <i class=\"fa fa-server fa_custom5 fa-2x\" ></i>\n    </md-button >\n</body>\n\n\n",
         "storeOutMessages": true,
@@ -1364,8 +1348,8 @@
         "type": "ui_template",
         "z": "0d994888ecbec5a9",
         "group": "7246bb7ca45fc30a",
-        "name": "Atualizar lista de Dispositivos Button Novo",
-        "order": 4,
+        "name": "Atualizar lista de Dispositivos Button",
+        "order": 2,
         "width": 4,
         "height": 1,
         "format": "<head>\n<style>\n    .button {\n        position: relative;\n        padding: 8px 16px;\n        background: #097479;\n        border: none;\n        outline: none;\n        border-radius: 12px;\n        cursor: pointer;\n    }\n\n    .button:active {\n        background: #007a63;\n    }\n\n    .button__text {\n        transition: all 0.2s;\n        position: absolute;\n        top: 1px;\n        left: 70px;\n        color: #ffffff;\n    }\n\n    .button--loading .fa_customBT{\n        visibility: hidden;\n        opacity: 0;\n    }\n\n    .button--loading::after {\n        content: \"\";\n        position: absolute;\n        width: 16px;\n        height: 16px;\n        top: 5px;\n        left: 20px;\n        border: 4px solid transparent;\n        border-top-color: #ffffff;\n        border-radius: 50%;\n        animation: button-loading-spinner 1s ease infinite;\n    }\n    .fa_customBT{\n        position: absolute;\n        top: 5px;\n        left: 20px;\n        color: #00BFFF;\n        transition: all 0.2s;\n    }\n    @keyframes button-loading-spinner {\n        from {\n            transform: rotate(0turn);\n        }\n\n        to {\n            transform: rotate(1turn);\n        }\n    }\n</style>\n<script>\n    (function(scope) {\n        scope.toggleLoding = function(){\n            const botaoNovo = document.querySelector(\".button\");\n            botaoNovo.classList.toggle(\"button--loading\");\n            scope.send({payload:\"att\"});\n            setTimeout(function() { \n                botaoNovo.classList.toggle(\"button--loading\");      \n            }, 8000);\n        }\n    })(scope);\n</script>\n</head>\n\n<body>\n    <md-button class=\"button\" title=\"Atualizar lista de Dispositivos\" ng-click=\"toggleLoding()\">\n        <i class=\"fa fa-refresh fa_customBT fa-2x\" ></i>\n        <spam class=\"button__text\"> Dispositivos</spam>\n    </md-button\n</body>\n\n",
@@ -1374,7 +1358,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 200,
+        "x": 190,
         "y": 400,
         "wires": [
             [
@@ -1419,7 +1403,7 @@
         "z": "0d994888ecbec5a9",
         "group": "93ef745fd1be13da",
         "name": "",
-        "order": 5,
+        "order": 1,
         "width": 0,
         "height": 0,
         "columns": [],
@@ -1434,7 +1418,7 @@
         "type": "function",
         "z": "0d994888ecbec5a9",
         "name": "function 4",
-        "func": "\nif(msg.payload == \"show\"){\n    msg.payload = {\n        \"group\": { 'show': ['Experimentador_Servicos'] }\n    };\n}\nif(msg.payload == \"hide\"){\n    msg.payload = {\n        \"group\": { 'hide': ['Experimentador_Servicos'] }\n    };\n}\n\nreturn msg;\n",
+        "func": "\nif(msg.payload == \"show\"){\n    msg.payload = {\n        \"group\": { 'show': ['Experimentador_Serviços'] }\n    };\n}\nif(msg.payload == \"hide\"){\n    msg.payload = {\n        \"group\": { 'hide': ['Experimentador_Serviços'] }\n    };\n}\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1475,6 +1459,28 @@
         "x": 220,
         "y": 760,
         "wires": []
+    },
+    {
+        "id": "7eb5cd1e8564af02",
+        "type": "ui_template",
+        "z": "0d994888ecbec5a9",
+        "d": true,
+        "group": "942911e5a152ccc7",
+        "name": "Upload loading spinner",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "format": "<head>\n<style>\n    .button {\n        position: relative;\n        padding: 8px 16px;\n        background: #097479;\n        border: none;\n        outline: none;\n        border-radius: 12px;\n        cursor: pointer;\n    }\n\n    .button:active {\n        background: #007a63;\n    }\n\n    .button__text {\n        transition: all 0.2s;\n        position: absolute;\n        top: 1px;\n        left: 70px;\n        color: #ffffff;\n    }\n\n    .button--loading .fa_customBT{\n        visibility: hidden;\n        opacity: 0;\n    }\n\n    .button--loading::after {\n        content: \"\";\n        position: absolute;\n        width: 16px;\n        height: 16px;\n        top: 5px;\n        left: 20px;\n        border: 4px solid transparent;\n        border-top-color: #ffffff;\n        border-radius: 50%;\n        animation: button-loading-spinner 1s ease infinite;\n    }\n    .fa_customBT{\n        position: absolute;\n        top: 5px;\n        left: 20px;\n        color: #00BFFF;\n        transition: all 0.2s;\n    }\n    @keyframes button-loading-spinner {\n        from {\n            transform: rotate(0turn);\n        }\n\n        to {\n            transform: rotate(1turn);\n        }\n    }\n</style>\n<script>\n    (function(scope) {\n        scope.toggleLoding = function(){\n            const botaoNovo = document.querySelector(\".button\");\n            botaoNovo.classList.toggle(\"button--loading\");\n            scope.send({payload:\"att\"});\n            setTimeout(function() { \n                botaoNovo.classList.toggle(\"button--loading\");      \n            }, 8000);\n        }\n    })(scope);\n</script>\n</head>\n\n<body>\n    <md-button class=\"button\" title=\"Atualizar lista de Dispositivos\" ng-click=\"toggleLoding()\">\n        <i class=\"fa fa-refresh fa_customBT fa-2x\" ></i>\n        <spam class=\"button__text\"> Dispositivos</spam>\n    </md-button\n</body>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 740,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "c8397d208eea04c2",
