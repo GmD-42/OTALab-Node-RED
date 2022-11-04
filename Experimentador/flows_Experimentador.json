@@ -1,16 +1,16 @@
 [
     {
-        "id": "0d994888ecbec5a9",
+        "id": "376708e12772b405",
         "type": "tab",
-        "label": "Experimentador",
+        "label": "Home",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "376708e12772b405",
+        "id": "0d994888ecbec5a9",
         "type": "tab",
-        "label": "Home",
+        "label": "Experimentador",
         "disabled": false,
         "info": "",
         "env": []
@@ -430,7 +430,7 @@
         "height": 1
     },
     {
-        "id": "ec10ddc3212d3143",
+        "id": "c267414136068945",
         "type": "ui_spacer",
         "z": "0d994888ecbec5a9",
         "name": "spacer",
@@ -440,7 +440,7 @@
         "height": 1
     },
     {
-        "id": "761f086a5578a327",
+        "id": "94cc83393786bb2e",
         "type": "ui_spacer",
         "z": "0d994888ecbec5a9",
         "name": "spacer",
@@ -450,7 +450,7 @@
         "height": 1
     },
     {
-        "id": "3026e5c56d36d0ff",
+        "id": "f97e432426368521",
         "type": "ui_spacer",
         "z": "0d994888ecbec5a9",
         "name": "spacer",
@@ -460,7 +460,7 @@
         "height": 1
     },
     {
-        "id": "e3e0abd9ab5a255a",
+        "id": "8dba26d1c18b2d5b",
         "type": "ui_spacer",
         "z": "0d994888ecbec5a9",
         "name": "spacer",
@@ -470,7 +470,7 @@
         "height": 1
     },
     {
-        "id": "c9d980897a990677",
+        "id": "0966e7a87cd1e2c1",
         "type": "ui_spacer",
         "z": "0d994888ecbec5a9",
         "name": "spacer",
@@ -736,753 +736,6 @@
         ]
     },
     {
-        "id": "76532f0468617d89",
-        "type": "comment",
-        "z": "0d994888ecbec5a9",
-        "name": "Experimentador",
-        "info": "",
-        "x": 120,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "d47681323c3b9c79",
-        "type": "ui_template",
-        "z": "0d994888ecbec5a9",
-        "group": "053f1dbc3dc11439",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<style>\n    h1.titulo {\n        text-align: center;\n        font-size: 50px;\n    }\n\n    h4.subTitle {\n        padding: 10px 40px;\n    }\n</style>\n<div>\n    <h1 class=\"titulo\">Experimentador</h1>\n    <h4 class=\"subTitle\">Aqui no experimentador temos uma forma simples e rápida de fazer o upload do seu código</h4>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 100,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "55f8d9ffc83c7af3",
-        "type": "subflow:8201d03376b5cd85",
-        "z": "0d994888ecbec5a9",
-        "name": "",
-        "x": 750,
-        "y": 400,
-        "wires": [
-            [],
-            [
-                "88f5237ea462bcbb",
-                "3ccf2b1193d815ef",
-                "69f00ec9c8106798"
-            ]
-        ]
-    },
-    {
-        "id": "3ccf2b1193d815ef",
-        "type": "ui_table",
-        "z": "0d994888ecbec5a9",
-        "group": "7246bb7ca45fc30a",
-        "name": "",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "columns": [
-            {
-                "field": "nome",
-                "title": "Nome",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "firmware",
-                "title": "Firmware",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "idServico",
-                "title": "ID do Serviço",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "ip",
-                "title": "IP",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "conexao",
-                "title": "Conexão",
-                "width": "",
-                "align": "left",
-                "formatter": "tickCross",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 0,
-        "cts": false,
-        "x": 970,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "7d4b6335905a806d",
-        "type": "subflow:092d1466ba43a0cb",
-        "z": "0d994888ecbec5a9",
-        "name": "",
-        "x": 1040,
-        "y": 340,
-        "wires": [
-            [
-                "b1f02f8ef6aeb7b3"
-            ]
-        ]
-    },
-    {
-        "id": "97b4a0b80f16c981",
-        "type": "subflow:769e63f2a79e59af",
-        "z": "0d994888ecbec5a9",
-        "name": "",
-        "x": 330,
-        "y": 200,
-        "wires": [
-            [
-                "a5fb06e1f94f344a"
-            ]
-        ]
-    },
-    {
-        "id": "a5fb06e1f94f344a",
-        "type": "function",
-        "z": "0d994888ecbec5a9",
-        "name": "Filtra wifi ativo",
-        "func": "var len = msg.payload.length;\nfor (var i = 0; i<len; i++) {\n    if(msg.payload[i].ativa == true){\n        context.flow.IDwifi = msg.payload[i].idConfiguracao;\n        msg.payload = msg.payload[i];\n        return msg;\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 600,
-        "y": 200,
-        "wires": [
-            [
-                "5192c0c.07a6f4",
-                "bcce7872ad5ad06e"
-            ]
-        ]
-    },
-    {
-        "id": "1b07382131baafc6",
-        "type": "inject",
-        "z": "0d994888ecbec5a9",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 130,
-        "y": 200,
-        "wires": [
-            [
-                "97b4a0b80f16c981"
-            ]
-        ]
-    },
-    {
-        "id": "5192c0c.07a6f4",
-        "type": "ui_template",
-        "z": "0d994888ecbec5a9",
-        "group": "33449842d220a57b",
-        "name": "Wifi Button",
-        "order": 1,
-        "width": 5,
-        "height": 2,
-        "format": "<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n    <style type=\"text/css\">\n        .fa_custom1{\n            position: absolute;\n            top: 5px;\n            left: 15px;\n            color: #1E90FF;\n        }\n        .fa_custom2{\n            position: absolute;\n            top: 5px;\n            right: 15px;\n            color:lightgreen;\n        }\n        .buttonWifi{\n            background-color: #097479;\n            padding: 0;\n            margin: 20;\n            border-radius: 12px 12px 12px 12px;\n        }\n        .texto{\n            position: absolute;\n            top: -1px;\n            left: 55px;\n            color:lightgreen;\n        }\n        .text{\n            padding: 10px 40px;\n        }\n    </style>\n</head>\n\n<body>\n    <h3 class=\"text\">Rede WIFI: </h3>\n    <md-button class=\"buttonWifi\" title=\"Configurações de Rede\" ng-click=\"send({'payload':'att'})\">\n        <i class=\"fa fa-wifi fa_custom1 fa-2x\"></i> <spam class=\"texto\">{{msg.payload.nomeWiFi}}</spam> \n        <i class=\"fa fa-check-circle fa_custom2 fa-2x\" ></i>\n    </md-button >\n</body>\n</html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 830,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "da4bbd3f1dd87566",
-        "type": "comment",
-        "z": "0d994888ecbec5a9",
-        "name": "Mostar qual configuração Wifi está  ativa",
-        "info": "",
-        "x": 190,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "dfa0a1b76ebf0365",
-        "type": "comment",
-        "z": "0d994888ecbec5a9",
-        "name": "Show lista de dispositivos cadastrados e Atualiza as conexoes ativas",
-        "info": "",
-        "x": 280,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "1a3c492ed44cb8bb",
-        "type": "debug",
-        "z": "0d994888ecbec5a9",
-        "name": "debug 71",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "69f00ec9c8106798",
-        "type": "debug",
-        "z": "0d994888ecbec5a9",
-        "name": "debug 72",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "967d496d.a17698",
-        "type": "ui_dropdown",
-        "z": "0d994888ecbec5a9",
-        "name": "Data source",
-        "label": "",
-        "tooltip": "",
-        "place": "",
-        "group": "942911e5a152ccc7",
-        "order": 2,
-        "width": 5,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "",
-                "value": "",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "datasource",
-        "topicType": "str",
-        "className": "",
-        "x": 410,
-        "y": 560,
-        "wires": [
-            [
-                "5615359c9c0a4a7e"
-            ]
-        ]
-    },
-    {
-        "id": "88f5237ea462bcbb",
-        "type": "function",
-        "z": "0d994888ecbec5a9",
-        "name": "salva idConexao, nome, e mostar dispositivo ativo",
-        "func": "var len = msg.payload.length;\nlet BV = [];\nvar arr = [];\nfor (var i=0; i<len; i++){\n    if (msg.payload[i].conexao){\n        BV[i] = msg.payload[i].nome;\n    }\n    arr[i] = {\n        nome: msg.payload[i].nome,\n        idConexao: msg.payload[i].idConexao\n    };\n}\nif (BV.length ==0){\n    BV[0] = \"Nenhum Dispositivo Ativo!\" \n}\ncontext.flow.arrContx = arr;\nmsg.options = BV;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 650,
-        "y": 480,
-        "wires": [
-            [
-                "2586f8b62f2c8535",
-                "967d496d.a17698"
-            ]
-        ]
-    },
-    {
-        "id": "2586f8b62f2c8535",
-        "type": "debug",
-        "z": "0d994888ecbec5a9",
-        "name": "debug 77",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "options",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "5615359c9c0a4a7e",
-        "type": "function",
-        "z": "0d994888ecbec5a9",
-        "name": "retorna idConexao do Disp Selecionado ",
-        "func": "var arr = context.flow.arrContx;\nvar len = arr.length;\nfor (var i=0; i<len; i++){\n    if(msg.payload == arr[i].nome){\n        msg.idConexao = arr[i].idConexao;\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 680,
-        "y": 560,
-        "wires": [
-            [
-                "564e31b840a0c3da",
-                "23c5725ec0e1761e"
-            ]
-        ]
-    },
-    {
-        "id": "307323cbec773606",
-        "type": "ui_upload",
-        "z": "0d994888ecbec5a9",
-        "group": "942911e5a152ccc7",
-        "title": "Upload: ",
-        "name": "",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "chunk": 256,
-        "transfer": "binary",
-        "x": 550,
-        "y": 680,
-        "wires": [
-            [
-                "8e8ef3cf4233b501"
-            ]
-        ]
-    },
-    {
-        "id": "82c922e914e5e008",
-        "type": "debug",
-        "z": "0d994888ecbec5a9",
-        "name": "debug 79",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "564e31b840a0c3da",
-        "type": "function",
-        "z": "0d994888ecbec5a9",
-        "name": "save idConexao context",
-        "func": "context.global.idConexao = msg.idConexao;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 730,
-        "y": 620,
-        "wires": [
-            [
-                "e3748c473007c80b"
-            ]
-        ]
-    },
-    {
-        "id": "e7f391dd4e00ccb6",
-        "type": "ui_text",
-        "z": "0d994888ecbec5a9",
-        "group": "942911e5a152ccc7",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "name": "saida upload",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 990,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "8e8ef3cf4233b501",
-        "type": "subflow:63b650c6a477cad2",
-        "z": "0d994888ecbec5a9",
-        "name": "",
-        "x": 780,
-        "y": 680,
-        "wires": [
-            [
-                "e7f391dd4e00ccb6",
-                "82c922e914e5e008"
-            ]
-        ]
-    },
-    {
-        "id": "e3748c473007c80b",
-        "type": "debug",
-        "z": "0d994888ecbec5a9",
-        "name": "debug 80",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "80de0448bc5472fd",
-        "type": "ui_template",
-        "z": "0d994888ecbec5a9",
-        "group": "942911e5a152ccc7",
-        "name": "Select",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<style>\n    h4.subTitle {\n        padding: 10px 40px;\n    }\n</style>\n<div>\n    <h4 class=\"subTitle\"> Selecione o Dispositivo que deseja fazer Upload (clique no botão acima para atualizar a lista):</h4>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 390,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e7109707997b5d55",
-        "type": "ui_template",
-        "z": "0d994888ecbec5a9",
-        "group": "7246bb7ca45fc30a",
-        "name": "Title",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<style>\n    h3.subTitle {\n        padding: 8px 40px;\n    }\n</style>\n<div>\n    <h3 class=\"subTitle\">Dispositivos: </h4>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 90,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fc36e091f7ab847f",
-        "type": "function",
-        "z": "0d994888ecbec5a9",
-        "name": "Atualiza Coneções Ativas",
-        "func": "let arr = [];\n    arr = {\n        segundosEsperaRespostas: 6,\n        idConfiguracao: context.flow.IDwifi\n    };\nmsg.payload = arr;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 730,
-        "y": 340,
-        "wires": [
-            [
-                "7d4b6335905a806d",
-                "1a3c492ed44cb8bb"
-            ]
-        ]
-    },
-    {
-        "id": "b1f02f8ef6aeb7b3",
-        "type": "debug",
-        "z": "0d994888ecbec5a9",
-        "name": "debug 81",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1280,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "e8e12ef7e8753864",
-        "type": "ui_template",
-        "z": "0d994888ecbec5a9",
-        "group": "7246bb7ca45fc30a",
-        "name": "Serviços list Button",
-        "order": 3,
-        "width": 2,
-        "height": 1,
-        "format": "<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n    <style type=\"text/css\">\n        .fa_custom5{\n            position: absolute;\n            top: 5px;\n            left: 30px;\n            color: #00BFFF; \n        }\n        .button5{\n            padding: 0;\n            background-color: #097479;\n            border-radius: 12px;\n        }\n    </style>\n    <script>\n        (function(scope) {\n            var clickCounter=2;\n            scope.clickEvent = function(){\n                if (clickCounter % 2 == 0){\n                    scope.send({payload:'show'});\n                }\n                if (clickCounter% 2 > 0){\n                    scope.send({payload:'hide'});\n                }\n                clickCounter++;\n            }\n        })(scope);\n    </script>\n</head>\n\n<body>\n    <md-button class=\"button5\" title=\"SHOW, HIDE and UPDATE, lista de Serviços\" ng-click=\"clickEvent()\">\n        <i class=\"fa fa-server fa_custom5 fa-2x\" ></i>\n    </md-button >\n</body>\n\n\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 130,
-        "y": 820,
-        "wires": [
-            [
-                "3225a9aff5b38470"
-            ]
-        ]
-    },
-    {
-        "id": "04a105e7fa8a1ea8",
-        "type": "ui_ui_control",
-        "z": "0d994888ecbec5a9",
-        "name": "",
-        "events": "all",
-        "x": 540,
-        "y": 800,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bcce7872ad5ad06e",
-        "type": "debug",
-        "z": "0d994888ecbec5a9",
-        "name": "debug 82",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 820,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "2da9d84209a5eb69",
-        "type": "delay",
-        "z": "0d994888ecbec5a9",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "7",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 560,
-        "y": 400,
-        "wires": [
-            [
-                "55f8d9ffc83c7af3"
-            ]
-        ]
-    },
-    {
-        "id": "812012753d0ba649",
-        "type": "ui_template",
-        "z": "0d994888ecbec5a9",
-        "group": "7246bb7ca45fc30a",
-        "name": "Atualizar lista de Dispositivos Button",
-        "order": 2,
-        "width": 4,
-        "height": 1,
-        "format": "<head>\n<style>\n    .button {\n        position: relative;\n        padding: 8px 16px;\n        background: #097479;\n        border: none;\n        outline: none;\n        border-radius: 12px;\n        cursor: pointer;\n    }\n\n    .button:active {\n        background: #007a63;\n    }\n\n    .button__text {\n        transition: all 0.2s;\n        position: absolute;\n        top: 1px;\n        left: 70px;\n        color: #ffffff;\n    }\n\n    .button--loading .fa_customBT{\n        visibility: hidden;\n        opacity: 0;\n    }\n\n    .button--loading::after {\n        content: \"\";\n        position: absolute;\n        width: 16px;\n        height: 16px;\n        top: 5px;\n        left: 20px;\n        border: 4px solid transparent;\n        border-top-color: #ffffff;\n        border-radius: 50%;\n        animation: button-loading-spinner 1s ease infinite;\n    }\n    .fa_customBT{\n        position: absolute;\n        top: 5px;\n        left: 20px;\n        color: #00BFFF;\n        transition: all 0.2s;\n    }\n    @keyframes button-loading-spinner {\n        from {\n            transform: rotate(0turn);\n        }\n\n        to {\n            transform: rotate(1turn);\n        }\n    }\n</style>\n<script>\n    (function(scope) {\n        scope.toggleLoding = function(){\n            const botaoNovo = document.querySelector(\".button\");\n            botaoNovo.classList.toggle(\"button--loading\");\n            scope.send({payload:\"att\"});\n            setTimeout(function() { \n                botaoNovo.classList.toggle(\"button--loading\");      \n            }, 8000);\n        }\n    })(scope);\n</script>\n</head>\n\n<body>\n    <md-button class=\"button\" title=\"Atualizar lista de Dispositivos\" ng-click=\"toggleLoding()\">\n        <i class=\"fa fa-refresh fa_customBT fa-2x\" ></i>\n        <spam class=\"button__text\"> Dispositivos</spam>\n    </md-button\n</body>\n\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 190,
-        "y": 400,
-        "wires": [
-            [
-                "fc36e091f7ab847f",
-                "2da9d84209a5eb69"
-            ]
-        ]
-    },
-    {
-        "id": "23c5725ec0e1761e",
-        "type": "debug",
-        "z": "0d994888ecbec5a9",
-        "name": "debug 85",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "idConexao",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "d7cd03f9f9e0ca59",
-        "type": "subflow:3b59c7cb71354422",
-        "z": "0d994888ecbec5a9",
-        "name": "",
-        "x": 560,
-        "y": 840,
-        "wires": [
-            [
-                "b91f2a86c9e8a7d5"
-            ]
-        ]
-    },
-    {
-        "id": "b91f2a86c9e8a7d5",
-        "type": "ui_table",
-        "z": "0d994888ecbec5a9",
-        "group": "93ef745fd1be13da",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "columns": [],
-        "outputs": 0,
-        "cts": false,
-        "x": 730,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "3225a9aff5b38470",
-        "type": "function",
-        "z": "0d994888ecbec5a9",
-        "name": "function 4",
-        "func": "\nif(msg.payload == \"show\"){\n    msg.payload = {\n        \"group\": { 'show': ['Experimentador_Serviços'] }\n    };\n}\nif(msg.payload == \"hide\"){\n    msg.payload = {\n        \"group\": { 'hide': ['Experimentador_Serviços'] }\n    };\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 820,
-        "wires": [
-            [
-                "a04297adcbf79957",
-                "04a105e7fa8a1ea8",
-                "d7cd03f9f9e0ca59"
-            ]
-        ]
-    },
-    {
-        "id": "a04297adcbf79957",
-        "type": "debug",
-        "z": "0d994888ecbec5a9",
-        "name": "debug 87",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "5b4f33080b7dbc7f",
-        "type": "comment",
-        "z": "0d994888ecbec5a9",
-        "name": "Botão SHOW/HIDE a atualiza lista de Serviços ",
-        "info": "",
-        "x": 220,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "7eb5cd1e8564af02",
-        "type": "ui_template",
-        "z": "0d994888ecbec5a9",
-        "d": true,
-        "group": "942911e5a152ccc7",
-        "name": "Upload loading spinner",
-        "order": 3,
-        "width": 4,
-        "height": 1,
-        "format": "<head>\n<style>\n    .button {\n        position: relative;\n        padding: 8px 16px;\n        background: #097479;\n        border: none;\n        outline: none;\n        border-radius: 12px;\n        cursor: pointer;\n    }\n\n    .button:active {\n        background: #007a63;\n    }\n\n    .button__text {\n        transition: all 0.2s;\n        position: absolute;\n        top: 1px;\n        left: 70px;\n        color: #ffffff;\n    }\n\n    .button--loading .fa_customBT{\n        visibility: hidden;\n        opacity: 0;\n    }\n\n    .button--loading::after {\n        content: \"\";\n        position: absolute;\n        width: 16px;\n        height: 16px;\n        top: 5px;\n        left: 20px;\n        border: 4px solid transparent;\n        border-top-color: #ffffff;\n        border-radius: 50%;\n        animation: button-loading-spinner 1s ease infinite;\n    }\n    .fa_customBT{\n        position: absolute;\n        top: 5px;\n        left: 20px;\n        color: #00BFFF;\n        transition: all 0.2s;\n    }\n    @keyframes button-loading-spinner {\n        from {\n            transform: rotate(0turn);\n        }\n\n        to {\n            transform: rotate(1turn);\n        }\n    }\n</style>\n<script>\n    (function(scope) {\n        scope.toggleLoding = function(){\n            const botaoNovo = document.querySelector(\".button\");\n            botaoNovo.classList.toggle(\"button--loading\");\n            scope.send({payload:\"att\"});\n            setTimeout(function() { \n                botaoNovo.classList.toggle(\"button--loading\");      \n            }, 8000);\n        }\n    })(scope);\n</script>\n</head>\n\n<body>\n    <md-button class=\"button\" title=\"Atualizar lista de Dispositivos\" ng-click=\"toggleLoding()\">\n        <i class=\"fa fa-refresh fa_customBT fa-2x\" ></i>\n        <spam class=\"button__text\"> Dispositivos</spam>\n    </md-button\n</body>\n\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 660,
-        "y": 740,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "c8397d208eea04c2",
         "type": "comment",
         "z": "376708e12772b405",
@@ -1590,6 +843,904 @@
         "wires": [
             [
                 "f6afa1c6d15cee3a"
+            ]
+        ]
+    },
+    {
+        "id": "76532f0468617d89",
+        "type": "comment",
+        "z": "0d994888ecbec5a9",
+        "name": "Experimentador",
+        "info": "",
+        "x": 120,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d47681323c3b9c79",
+        "type": "ui_template",
+        "z": "0d994888ecbec5a9",
+        "group": "053f1dbc3dc11439",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    h1.titulo {\n        text-align: center;\n        font-size: 50px;\n    }\n\n    h4.subTitle {\n        padding: 10px 40px;\n    }\n</style>\n<div>\n    <h1 class=\"titulo\">Experimentador</h1>\n    <h4 class=\"subTitle\">Aqui no experimentador temos uma forma simples e rápida de fazer o upload do seu código</h4>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55f8d9ffc83c7af3",
+        "type": "subflow:8201d03376b5cd85",
+        "z": "0d994888ecbec5a9",
+        "name": "",
+        "x": 750,
+        "y": 360,
+        "wires": [
+            [],
+            [
+                "88f5237ea462bcbb",
+                "3ccf2b1193d815ef",
+                "69f00ec9c8106798"
+            ]
+        ]
+    },
+    {
+        "id": "3ccf2b1193d815ef",
+        "type": "ui_table",
+        "z": "0d994888ecbec5a9",
+        "group": "7246bb7ca45fc30a",
+        "name": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "nome",
+                "title": "Nome",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "firmware",
+                "title": "Firmware",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "idServico",
+                "title": "ID do Serviço",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "ip",
+                "title": "IP",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "conexao",
+                "title": "Conexão",
+                "width": "",
+                "align": "left",
+                "formatter": "tickCross",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 970,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "7d4b6335905a806d",
+        "type": "subflow:092d1466ba43a0cb",
+        "z": "0d994888ecbec5a9",
+        "name": "",
+        "x": 1040,
+        "y": 300,
+        "wires": [
+            [
+                "b1f02f8ef6aeb7b3"
+            ]
+        ]
+    },
+    {
+        "id": "97b4a0b80f16c981",
+        "type": "subflow:769e63f2a79e59af",
+        "z": "0d994888ecbec5a9",
+        "name": "",
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "a5fb06e1f94f344a"
+            ]
+        ]
+    },
+    {
+        "id": "a5fb06e1f94f344a",
+        "type": "function",
+        "z": "0d994888ecbec5a9",
+        "name": "Filtra wifi ativo",
+        "func": "var len = msg.payload.length;\nfor (var i = 0; i<len; i++) {\n    if(msg.payload[i].ativa == true){\n        context.flow.IDwifi = msg.payload[i].idConfiguracao;\n        msg.payload = msg.payload[i];\n        return msg;\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 180,
+        "wires": [
+            [
+                "5192c0c.07a6f4",
+                "bcce7872ad5ad06e"
+            ]
+        ]
+    },
+    {
+        "id": "1b07382131baafc6",
+        "type": "inject",
+        "z": "0d994888ecbec5a9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "97b4a0b80f16c981"
+            ]
+        ]
+    },
+    {
+        "id": "5192c0c.07a6f4",
+        "type": "ui_template",
+        "z": "0d994888ecbec5a9",
+        "group": "33449842d220a57b",
+        "name": "Wifi Button",
+        "order": 1,
+        "width": 5,
+        "height": 2,
+        "format": "<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n    <style type=\"text/css\">\n        .fa_custom1{\n            position: absolute;\n            top: 5px;\n            left: 15px;\n            color: #1E90FF;\n        }\n        .fa_custom2{\n            position: absolute;\n            top: 5px;\n            right: 15px;\n            color:lightgreen;\n        }\n        .buttonWifi{\n            background-color: #097479;\n            padding: 0;\n            margin: 20;\n            border-radius: 12px 12px 12px 12px;\n        }\n        .texto{\n            position: absolute;\n            top: -1px;\n            left: 55px;\n            color:lightgreen;\n        }\n        .text{\n            padding: 10px 40px;\n        }\n    </style>\n</head>\n\n<body>\n    <h3 class=\"text\">Rede WIFI: </h3>\n    <md-button class=\"buttonWifi\" title=\"Configurações de Rede\" ng-click=\"send({'payload':'att'})\">\n        <i class=\"fa fa-wifi fa_custom1 fa-2x\"></i> <spam class=\"texto\">{{msg.payload.nomeWiFi}}</spam> \n        <i class=\"fa fa-check-circle fa_custom2 fa-2x\" ></i>\n    </md-button >\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 830,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da4bbd3f1dd87566",
+        "type": "comment",
+        "z": "0d994888ecbec5a9",
+        "name": "Mostar qual configuração Wifi está  ativa",
+        "info": "",
+        "x": 190,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "dfa0a1b76ebf0365",
+        "type": "comment",
+        "z": "0d994888ecbec5a9",
+        "name": "Show lista de dispositivos cadastrados e Atualiza as conexoes ativas",
+        "info": "",
+        "x": 280,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1a3c492ed44cb8bb",
+        "type": "debug",
+        "z": "0d994888ecbec5a9",
+        "name": "debug 71",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "69f00ec9c8106798",
+        "type": "debug",
+        "z": "0d994888ecbec5a9",
+        "name": "debug 72",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "967d496d.a17698",
+        "type": "ui_dropdown",
+        "z": "0d994888ecbec5a9",
+        "name": "Data source",
+        "label": "",
+        "tooltip": "",
+        "place": "",
+        "group": "942911e5a152ccc7",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "datasource",
+        "topicType": "str",
+        "className": "",
+        "x": 410,
+        "y": 520,
+        "wires": [
+            [
+                "5615359c9c0a4a7e"
+            ]
+        ]
+    },
+    {
+        "id": "88f5237ea462bcbb",
+        "type": "function",
+        "z": "0d994888ecbec5a9",
+        "name": "salva idConexao, nome, e mostar dispositivo ativo",
+        "func": "var len = msg.payload.length;\nlet BV = [];\nvar arr = [];\nfor (var i=0; i<len; i++){\n    if (msg.payload[i].conexao){\n        BV[i] = msg.payload[i].nome;\n    }\n    arr[i] = {\n        nome: msg.payload[i].nome,\n        idConexao: msg.payload[i].idConexao\n    };\n}\nif (BV.length ==0){\n    BV[0] = \"Nenhum Dispositivo Ativo!\" \n}\ncontext.flow.arrContx = arr;\nmsg.options = BV;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 440,
+        "wires": [
+            [
+                "2586f8b62f2c8535",
+                "967d496d.a17698"
+            ]
+        ]
+    },
+    {
+        "id": "2586f8b62f2c8535",
+        "type": "debug",
+        "z": "0d994888ecbec5a9",
+        "name": "debug 77",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "options",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "5615359c9c0a4a7e",
+        "type": "function",
+        "z": "0d994888ecbec5a9",
+        "name": "retorna idConexao do Disp Selecionado ",
+        "func": "var arr = context.flow.arrContx;\nvar len = arr.length;\nfor (var i=0; i<len; i++){\n    if(msg.payload == arr[i].nome){\n        msg.idConexao = arr[i].idConexao;\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 520,
+        "wires": [
+            [
+                "564e31b840a0c3da",
+                "23c5725ec0e1761e"
+            ]
+        ]
+    },
+    {
+        "id": "307323cbec773606",
+        "type": "ui_upload",
+        "z": "0d994888ecbec5a9",
+        "group": "942911e5a152ccc7",
+        "title": "Upload: ",
+        "name": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "chunk": 256,
+        "transfer": "binary",
+        "x": 570,
+        "y": 680,
+        "wires": [
+            [
+                "8e8ef3cf4233b501",
+                "7fa4d0bd6b6b9635",
+                "8983e11fedce420c"
+            ]
+        ]
+    },
+    {
+        "id": "82c922e914e5e008",
+        "type": "debug",
+        "z": "0d994888ecbec5a9",
+        "name": "debug 79",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "564e31b840a0c3da",
+        "type": "function",
+        "z": "0d994888ecbec5a9",
+        "name": "save idConexao context",
+        "func": "context.global.idConexao = msg.idConexao;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 580,
+        "wires": [
+            [
+                "e3748c473007c80b"
+            ]
+        ]
+    },
+    {
+        "id": "e7f391dd4e00ccb6",
+        "type": "ui_text",
+        "z": "0d994888ecbec5a9",
+        "group": "942911e5a152ccc7",
+        "order": 6,
+        "width": 20,
+        "height": 2,
+        "name": "saida upload",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 990,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "8e8ef3cf4233b501",
+        "type": "subflow:63b650c6a477cad2",
+        "z": "0d994888ecbec5a9",
+        "name": "",
+        "x": 760,
+        "y": 680,
+        "wires": [
+            [
+                "e7f391dd4e00ccb6",
+                "82c922e914e5e008",
+                "2b14459265297600"
+            ]
+        ]
+    },
+    {
+        "id": "e3748c473007c80b",
+        "type": "debug",
+        "z": "0d994888ecbec5a9",
+        "name": "debug 80",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "80de0448bc5472fd",
+        "type": "ui_template",
+        "z": "0d994888ecbec5a9",
+        "group": "942911e5a152ccc7",
+        "name": "Select",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    h4.subTitle {\n        padding: 10px 40px;\n    }\n</style>\n<div>\n    <h4 class=\"subTitle\"> Selecione o Dispositivo que deseja fazer Upload (clique no botão acima para atualizar a lista):</h4>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 390,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e7109707997b5d55",
+        "type": "ui_template",
+        "z": "0d994888ecbec5a9",
+        "group": "7246bb7ca45fc30a",
+        "name": "Title",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    h3.subTitle {\n        padding: 8px 40px;\n    }\n</style>\n<div>\n    <h3 class=\"subTitle\">Dispositivos: </h4>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 90,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fc36e091f7ab847f",
+        "type": "function",
+        "z": "0d994888ecbec5a9",
+        "name": "Atualiza Coneções Ativas",
+        "func": "let arr = [];\n    arr = {\n        segundosEsperaRespostas: 6,\n        idConfiguracao: context.flow.IDwifi\n    };\nmsg.payload = arr;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 300,
+        "wires": [
+            [
+                "7d4b6335905a806d",
+                "1a3c492ed44cb8bb"
+            ]
+        ]
+    },
+    {
+        "id": "b1f02f8ef6aeb7b3",
+        "type": "debug",
+        "z": "0d994888ecbec5a9",
+        "name": "debug 81",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e8e12ef7e8753864",
+        "type": "ui_template",
+        "z": "0d994888ecbec5a9",
+        "group": "7246bb7ca45fc30a",
+        "name": "Serviços list Button",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "format": "<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n    <style type=\"text/css\">\n        .fa_custom5{\n            position: absolute;\n            top: 5px;\n            left: 30px;\n            color: #00BFFF; \n        }\n        .button5{\n            padding: 0;\n            background-color: #097479;\n            border-radius: 12px;\n        }\n    </style>\n    <script>\n        (function(scope) {\n            var clickCounter=2;\n            scope.clickEvent = function(){\n                if (clickCounter % 2 == 0){\n                    scope.send({payload:'show'});\n                }\n                if (clickCounter% 2 > 0){\n                    scope.send({payload:'hide'});\n                }\n                clickCounter++;\n            }\n        })(scope);\n    </script>\n</head>\n\n<body>\n    <md-button class=\"button5\" title=\"SHOW, HIDE and UPDATE, lista de Serviços\" ng-click=\"clickEvent()\">\n        <i class=\"fa fa-server fa_custom5 fa-2x\" ></i>\n    </md-button >\n</body>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 130,
+        "y": 780,
+        "wires": [
+            [
+                "3225a9aff5b38470"
+            ]
+        ]
+    },
+    {
+        "id": "04a105e7fa8a1ea8",
+        "type": "ui_ui_control",
+        "z": "0d994888ecbec5a9",
+        "name": "",
+        "events": "all",
+        "x": 540,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bcce7872ad5ad06e",
+        "type": "debug",
+        "z": "0d994888ecbec5a9",
+        "name": "debug 82",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "2da9d84209a5eb69",
+        "type": "delay",
+        "z": "0d994888ecbec5a9",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "7",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 360,
+        "wires": [
+            [
+                "55f8d9ffc83c7af3"
+            ]
+        ]
+    },
+    {
+        "id": "812012753d0ba649",
+        "type": "ui_template",
+        "z": "0d994888ecbec5a9",
+        "group": "7246bb7ca45fc30a",
+        "name": "Atualizar lista de Dispositivos Button",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "format": "<head>\n<style>\n    .button {\n        position: relative;\n        padding: 8px 16px;\n        background: #097479;\n        border: none;\n        outline: none;\n        border-radius: 12px;\n        cursor: pointer;\n    }\n\n    .button:active {\n        background: #007a63;\n    }\n\n    .button__text {\n        transition: all 0.2s;\n        position: absolute;\n        top: 1px;\n        left: 70px;\n        color: #ffffff;\n    }\n\n    .button--loading .fa_customBT{\n        visibility: hidden;\n        opacity: 0;\n    }\n\n    .button--loading::after {\n        content: \"\";\n        position: absolute;\n        width: 16px;\n        height: 16px;\n        top: 5px;\n        left: 20px;\n        border: 4px solid transparent;\n        border-top-color: #ffffff;\n        border-radius: 50%;\n        animation: button-loading-spinner 1s ease infinite;\n    }\n    .fa_customBT{\n        position: absolute;\n        top: 5px;\n        left: 20px;\n        color: #00BFFF;\n        transition: all 0.2s;\n    }\n    @keyframes button-loading-spinner {\n        from {\n            transform: rotate(0turn);\n        }\n\n        to {\n            transform: rotate(1turn);\n        }\n    }\n</style>\n<script>\n    (function(scope) {\n        scope.toggleLoding = function(){\n            const botaoNovo = document.querySelector(\".button\");\n            botaoNovo.classList.toggle(\"button--loading\");\n            scope.send({payload:\"att\"});\n            setTimeout(function() { \n                botaoNovo.classList.toggle(\"button--loading\");      \n            }, 8000);\n        }\n    })(scope);\n</script>\n</head>\n\n<body>\n    <md-button class=\"button\" title=\"Atualizar lista de Dispositivos\" ng-click=\"toggleLoding()\">\n        <i class=\"fa fa-refresh fa_customBT fa-2x\" ></i>\n        <spam class=\"button__text\"> Dispositivos</spam>\n    </md-button\n</body>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "fc36e091f7ab847f",
+                "2da9d84209a5eb69"
+            ]
+        ]
+    },
+    {
+        "id": "23c5725ec0e1761e",
+        "type": "debug",
+        "z": "0d994888ecbec5a9",
+        "name": "debug 85",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "idConexao",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d7cd03f9f9e0ca59",
+        "type": "subflow:3b59c7cb71354422",
+        "z": "0d994888ecbec5a9",
+        "name": "",
+        "x": 560,
+        "y": 800,
+        "wires": [
+            [
+                "b91f2a86c9e8a7d5"
+            ]
+        ]
+    },
+    {
+        "id": "b91f2a86c9e8a7d5",
+        "type": "ui_table",
+        "z": "0d994888ecbec5a9",
+        "group": "93ef745fd1be13da",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 730,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "3225a9aff5b38470",
+        "type": "function",
+        "z": "0d994888ecbec5a9",
+        "name": "function 4",
+        "func": "\nif(msg.payload == \"show\"){\n    msg.payload = {\n        \"group\": { 'show': ['Experimentador_Serviços'] }\n    };\n}\nif(msg.payload == \"hide\"){\n    msg.payload = {\n        \"group\": { 'hide': ['Experimentador_Serviços'] }\n    };\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 780,
+        "wires": [
+            [
+                "a04297adcbf79957",
+                "04a105e7fa8a1ea8",
+                "d7cd03f9f9e0ca59"
+            ]
+        ]
+    },
+    {
+        "id": "a04297adcbf79957",
+        "type": "debug",
+        "z": "0d994888ecbec5a9",
+        "name": "debug 87",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "5b4f33080b7dbc7f",
+        "type": "comment",
+        "z": "0d994888ecbec5a9",
+        "name": "Botão SHOW/HIDE a atualiza lista de Serviços ",
+        "info": "",
+        "x": 220,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "7eb5cd1e8564af02",
+        "type": "ui_template",
+        "z": "0d994888ecbec5a9",
+        "d": true,
+        "group": "942911e5a152ccc7",
+        "name": "Upload loading spinner",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "format": "<head>\n<style>\n    .button {\n        position: relative;\n        padding: 8px 16px;\n        background: #097479;\n        border: none;\n        outline: none;\n        border-radius: 12px;\n        cursor: pointer;\n    }\n\n    .button:active {\n        background: #007a63;\n    }\n\n    .button__text {\n        transition: all 0.2s;\n        position: absolute;\n        top: 1px;\n        left: 70px;\n        color: #ffffff;\n    }\n\n    .button--loading .fa_customBT{\n        visibility: hidden;\n        opacity: 0;\n    }\n\n    .button--loading::after {\n        content: \"\";\n        position: absolute;\n        width: 16px;\n        height: 16px;\n        top: 5px;\n        left: 20px;\n        border: 4px solid transparent;\n        border-top-color: #ffffff;\n        border-radius: 50%;\n        animation: button-loading-spinner 1s ease infinite;\n    }\n    .fa_customBT{\n        position: absolute;\n        top: 5px;\n        left: 20px;\n        color: #00BFFF;\n        transition: all 0.2s;\n    }\n    @keyframes button-loading-spinner {\n        from {\n            transform: rotate(0turn);\n        }\n\n        to {\n            transform: rotate(1turn);\n        }\n    }\n</style>\n<script>\n    (function(scope) {\n        const botaoNovo = document.querySelector(\".button\");\n        if(msg.payload == \"Starting\"){\n            botaoNovo.classList.toggle(\"button--loading\");\n        }\n        if(msg.payload == \"Ended\"){\n            botaoNovo.classList.toggle(\"button--loading\");\n        }\n        scope.send({payload:\"att\"});\n    })(scope);\n</script>\n</head>\n\n<body>\n    <div class=\"button\">\n        <i class=\"fa fa-refresh fa_customBT fa-2x\" ></i>\n        <spam class=\"button__text\"> Uploading</spam>\n    </div>\n</body>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 140,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7fa4d0bd6b6b9635",
+        "type": "trigger",
+        "z": "0d994888ecbec5a9",
+        "name": "",
+        "op1": "",
+        "op2": "Starting",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "50",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 990,
+        "y": 760,
+        "wires": [
+            [
+                "20c2429ef204c350",
+                "ca69c82ebf42d5b0"
+            ]
+        ]
+    },
+    {
+        "id": "20c2429ef204c350",
+        "type": "debug",
+        "z": "0d994888ecbec5a9",
+        "name": "debug 88",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "b80122234e1c0cf1",
+        "type": "ui_template",
+        "z": "0d994888ecbec5a9",
+        "d": true,
+        "group": "b6adb5e6150b3a91",
+        "name": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n    $(document).ajaxStart(function(){\n        $('#loading').show();    \n    }).ajaxStop(function(){\n        $('#loading').hide();\n    });\n</script>\n\n<div id=\"loading\">\n    <p><img src=\"loading.gif\" /> Please Wait</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 120,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b14459265297600",
+        "type": "trigger",
+        "z": "0d994888ecbec5a9",
+        "name": "",
+        "op1": "",
+        "op2": "Ended",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "50",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 990,
+        "y": 720,
+        "wires": [
+            [
+                "6501915c81f86d93",
+                "ca69c82ebf42d5b0"
+            ]
+        ]
+    },
+    {
+        "id": "6501915c81f86d93",
+        "type": "debug",
+        "z": "0d994888ecbec5a9",
+        "name": "debug 89",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "ca69c82ebf42d5b0",
+        "type": "function",
+        "z": "0d994888ecbec5a9",
+        "name": "function 5",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8983e11fedce420c",
+        "type": "trigger",
+        "z": "0d994888ecbec5a9",
+        "name": "",
+        "op1": "",
+        "op2": " ",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "1",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 770,
+        "y": 640,
+        "wires": [
+            [
+                "e7f391dd4e00ccb6"
             ]
         ]
     }
