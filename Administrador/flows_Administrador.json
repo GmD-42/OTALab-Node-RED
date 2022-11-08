@@ -2466,23 +2466,6 @@
         "height": 1
     },
     {
-        "id": "4b73adc4.5ffc3c",
-        "type": "ui_group",
-        "z": "370fb32a3ba7472e",
-        "name": "Test",
-        "tab": "aa1f6946.e15cf",
-        "order": 1,
-        "disp": true,
-        "width": "6"
-    },
-    {
-        "id": "aa1f6946.e15cf",
-        "type": "ui_tab",
-        "z": "370fb32a3ba7472e",
-        "name": "Tableau",
-        "icon": "dashboard"
-    },
-    {
         "id": "7b410c203b1ec35c",
         "type": "json",
         "z": "54baf02cf6742d2d",
@@ -3492,7 +3475,7 @@
         "type": "function",
         "z": "8201d03376b5cd85",
         "name": "String parser to OBJ",
-        "func": "var arr = []; \nvar plen = msg.payload.length;\nvar test;\nfor (var i = 0; i < plen; i++){   \n    if (msg.payload[i].conexoes.length != 0 && msg.payload[i].servicos.length !=0){\n        arr[i] = {\n            idDispositivo: msg.payload[i].idDispositivo,\n            nome: msg.payload[i].nome,\n            descricao: msg.payload[i].descricao,\n            placa: msg.payload[i].placa,\n            portaCadastro: msg.payload[i].portaCadastro,\n            firmware: msg.payload[i].firmware,\n            idConexao: msg.payload[i].conexoes[0].idConexao,\n            ip: msg.payload[i].conexoes[0].ip,\n            idServico: msg.payload[i].servicos[0].idServico\n        }\n    }\n    if (msg.payload[i].conexoes.length == 0 && msg.payload[i].servicos.length != 0) {\n        arr[i] = {\n            idDispositivo: msg.payload[i].idDispositivo,\n            nome: msg.payload[i].nome,\n            descricao: msg.payload[i].descricao,\n            placa: msg.payload[i].placa,\n            portaCadastro: msg.payload[i].portaCadastro,\n            firmware: msg.payload[i].firmware,\n            idConexao: \"0\",\n            ip: \"0\",\n            idServico: msg.payload[i].servicos[0].idServico\n        }\n    }\n    if (msg.payload[i].conexoes.length != 0 && msg.payload[i].servicos.length == 0) {\n        arr[i] = {\n            idDispositivo: msg.payload[i].idDispositivo,\n            nome: msg.payload[i].nome,\n            descricao: msg.payload[i].descricao,\n            placa: msg.payload[i].placa,\n            portaCadastro: msg.payload[i].portaCadastro,\n            firmware: msg.payload[i].firmware,\n            idConexao: msg.payload[i].conexoes[0].idConexao,\n            ip: msg.payload[i].conexoes[0].ip,\n            idServico: \"0\"\n        }\n    }\n    if (msg.payload[i].conexoes.length == 0 && msg.payload[i].servicos.length == 0) {\n        arr[i] = {\n            idDispositivo: msg.payload[i].idDispositivo,\n            nome: msg.payload[i].nome,\n            descricao: msg.payload[i].descricao,\n            placa: msg.payload[i].placa,\n            portaCadastro: msg.payload[i].portaCadastro,\n            firmware: msg.payload[i].firmware,\n            idConexao: \"0\",\n            ip: \"0\",\n            idServico: \"0\"\n        }\n    }\n}\n\nmsg.payload = arr;\nreturn msg;",
+        "func": "var arr = []; \nvar plen = msg.payload.length;\nvar test;\nfor (var i = 0; i < plen; i++){ \n    if (msg.payload[i].conexoes.length != 0 && msg.payload[i].servicos.length !=0){\n        arr[i] = {\n            idDispositivo: msg.payload[i].idDispositivo,\n            nome: msg.payload[i].nome,\n            descricao: msg.payload[i].descricao,\n            placa: msg.payload[i].placa,\n            portaCadastro: msg.payload[i].portaCadastro,\n            firmware: msg.payload[i].firmware,\n            idConexao: msg.payload[i].conexoes[0].idConexao,\n            ip: msg.payload[i].conexoes[0].ip,\n            idServico: msg.payload[i].servicos[0].idServico\n        }\n    }\n    if (msg.payload[i].conexoes.length == 0 && msg.payload[i].servicos.length != 0) {\n        arr[i] = {\n            idDispositivo: msg.payload[i].idDispositivo,\n            nome: msg.payload[i].nome,\n            descricao: msg.payload[i].descricao,\n            placa: msg.payload[i].placa,\n            portaCadastro: msg.payload[i].portaCadastro,\n            firmware: msg.payload[i].firmware,\n            idConexao: \"0\",\n            ip: \"0\",\n            idServico: msg.payload[i].servicos[0].idServico\n        }\n    }\n    if (msg.payload[i].conexoes.length != 0 && msg.payload[i].servicos.length == 0) {\n        arr[i] = {\n            idDispositivo: msg.payload[i].idDispositivo,\n            nome: msg.payload[i].nome,\n            descricao: msg.payload[i].descricao,\n            placa: msg.payload[i].placa,\n            portaCadastro: msg.payload[i].portaCadastro,\n            firmware: msg.payload[i].firmware,\n            idConexao: msg.payload[i].conexoes[0].idConexao,\n            ip: msg.payload[i].conexoes[0].ip,\n            idServico: \"0\"\n        }\n    }\n    if (msg.payload[i].conexoes.length == 0 && msg.payload[i].servicos.length == 0) {\n        arr[i] = {\n            idDispositivo: msg.payload[i].idDispositivo,\n            nome: msg.payload[i].nome,\n            descricao: msg.payload[i].descricao,\n            placa: msg.payload[i].placa,\n            portaCadastro: msg.payload[i].portaCadastro,\n            firmware: msg.payload[i].firmware,\n            idConexao: \"0\",\n            ip: \"0\",\n            idServico: \"0\"\n        }\n    }\n}\n\nmsg.payload = arr;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6201,7 +6184,7 @@
         "outputs": 0,
         "cts": false,
         "x": 630,
-        "y": 160,
+        "y": 200,
         "wires": []
     },
     {
@@ -6217,7 +6200,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 640,
-        "y": 200,
+        "y": 240,
         "wires": []
     },
     {
@@ -6441,89 +6424,6 @@
                 "fafb5da973408774"
             ]
         ]
-    },
-    {
-        "id": "c2361447e3cb6fa4",
-        "type": "ui_table",
-        "z": "4462e4ada576ee10",
-        "group": "7b14d4efaccdea77",
-        "name": "",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "columns": [
-            {
-                "field": "idDispositivo",
-                "title": "idDispositivo",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "nome",
-                "title": "nome",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "firmware",
-                "title": "firmware",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "ip",
-                "title": "ip",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "ativo",
-                "title": "ativo",
-                "width": "",
-                "align": "left",
-                "formatter": "tickCross",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 0,
-        "cts": false,
-        "x": 630,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "35fecee34cbfe170",
-        "type": "debug",
-        "z": "4462e4ada576ee10",
-        "name": "debug 69",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 280,
-        "wires": []
     },
     {
         "id": "34c1803c627ae547",
@@ -9957,7 +9857,7 @@
         "id": "cf38d011.f6d44",
         "type": "ui_template",
         "z": "370fb32a3ba7472e",
-        "group": "4b73adc4.5ffc3c",
+        "group": "b6adb5e6150b3a91",
         "name": "",
         "order": 0,
         "width": "0",
