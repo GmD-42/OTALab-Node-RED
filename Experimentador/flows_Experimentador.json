@@ -18,7 +18,15 @@
     {
         "id": "4ca08a68e58fb9c9",
         "type": "tab",
-        "label": "Testes",
+        "label": "LEDTelegram",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "391b054734a8226e",
+        "type": "tab",
+        "label": "Temperatura",
         "disabled": false,
         "info": "",
         "env": []
@@ -478,6 +486,56 @@
         "order": 3,
         "width": 15,
         "height": 1
+    },
+    {
+        "id": "4bff601.4407ba",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.mqtt-dashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "18cdce9f3c0c7722",
+        "type": "telegram bot",
+        "botname": "Bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
     },
     {
         "id": "6d9edbb7e4b3b45f",
@@ -1714,5 +1772,261 @@
                 "be3487e93f698a6a"
             ]
         ]
+    },
+    {
+        "id": "3c2d71a5.9bd0ee",
+        "type": "mqtt out",
+        "z": "4ca08a68e58fb9c9",
+        "name": "LED out",
+        "topic": "tcc/iot/mqtt/led",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4bff601.4407ba",
+        "x": 520,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "79d2cdce.b40e64",
+        "type": "mqtt in",
+        "z": "4ca08a68e58fb9c9",
+        "name": "LED in",
+        "topic": "tcc/iot/mqtt/led",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4bff601.4407ba",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [
+                "d233ea80.789658"
+            ]
+        ]
+    },
+    {
+        "id": "8a9c73d2.fffbd",
+        "type": "http request",
+        "z": "4ca08a68e58fb9c9",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 690,
+        "y": 220,
+        "wires": [
+            [
+                "47caf908.c6c1c8"
+            ]
+        ]
+    },
+    {
+        "id": "d07e5258.7e094",
+        "type": "change",
+        "z": "4ca08a68e58fb9c9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 220,
+        "wires": [
+            [
+                "8a9c73d2.fffbd"
+            ]
+        ]
+    },
+    {
+        "id": "47caf908.c6c1c8",
+        "type": "function",
+        "z": "4ca08a68e58fb9c9",
+        "name": "Restore context",
+        "func": "var content = msg.payload;\nvar chatId = context.flow.chatId;\nvar type = \"message\";\npayload={chatId:chatId,type:type,content:content};\nmsg.payload=payload;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 220,
+        "wires": [
+            [
+                "8b890385.88e57",
+                "985cf611.706988"
+            ]
+        ]
+    },
+    {
+        "id": "985cf611.706988",
+        "type": "debug",
+        "z": "4ca08a68e58fb9c9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1090,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d233ea80.789658",
+        "type": "debug",
+        "z": "4ca08a68e58fb9c9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 870,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d15fe61d.c1ade8",
+        "type": "telegram receiver",
+        "z": "4ca08a68e58fb9c9",
+        "name": "",
+        "bot": "18cdce9f3c0c7722",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "fdf61557.a44608"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8b890385.88e57",
+        "type": "telegram sender",
+        "z": "4ca08a68e58fb9c9",
+        "name": "",
+        "bot": "18cdce9f3c0c7722",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1110,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a75cc6df.062bd8",
+        "type": "inject",
+        "z": "4ca08a68e58fb9c9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "acende",
+        "payloadType": "str",
+        "x": 330,
+        "y": 120,
+        "wires": [
+            [
+                "3c2d71a5.9bd0ee"
+            ]
+        ]
+    },
+    {
+        "id": "965dfb1f.dad778",
+        "type": "inject",
+        "z": "4ca08a68e58fb9c9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "apaga",
+        "payloadType": "str",
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "3c2d71a5.9bd0ee"
+            ]
+        ]
+    },
+    {
+        "id": "fdf61557.a44608",
+        "type": "function",
+        "z": "4ca08a68e58fb9c9",
+        "name": "Save context",
+        "func": "context.flow.chatId = msg.payload.chatId;\nif(msg.payload.type == \"message\"){\n    msg.payload = msg.payload.content;\n    return [msg,null];\n}\nif(msg.payload.type == \"document\"){\n    msg.payload = msg.payload.weblink;\n    return [null,msg];\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 200,
+        "wires": [
+            [
+                "3c2d71a5.9bd0ee"
+            ],
+            [
+                "d07e5258.7e094",
+                "368be65a.fbe9da"
+            ]
+        ]
+    },
+    {
+        "id": "368be65a.fbe9da",
+        "type": "debug",
+        "z": "4ca08a68e58fb9c9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 260,
+        "wires": []
     }
 ]
