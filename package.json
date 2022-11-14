@@ -7,7 +7,8 @@
     	"node-red": "*",
         "node-red-contrib-ui-upload": "~0.5.2",
         "node-red-dashboard": "~3.2.0",
-        "node-red-node-ui-table": "~0.4.3"
+        "node-red-node-ui-table": "~0.4.3",
+        "node-red-contrib-telegrambot" : "~14.8.7"
     },
     "scripts": {
         "start": "node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS"
