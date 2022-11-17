@@ -1,0 +1,223 @@
+[
+    {
+        "id": "79d2cdce.b40e64",
+        "type": "mqtt in",
+        "z": "391b054734a8226e",
+        "name": "LED in",
+        "topic": "tcc/iot/mqtt/led",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4bff601.4407ba",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 230,
+        "y": 120,
+        "wires": [
+            [
+                "ae576c96e08db34e"
+            ]
+        ]
+    },
+    {
+        "id": "ae576c96e08db34e",
+        "type": "join",
+        "z": "391b054734a8226e",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "cb0f45800ae718bb",
+                "cde3c40dfb8475b3"
+            ]
+        ]
+    },
+    {
+        "id": "cb0f45800ae718bb",
+        "type": "function",
+        "z": "391b054734a8226e",
+        "name": "function 1",
+        "func": "const parsedString = msg.payload.split('\\n').map((line) => line.split('\\n'));\n\nvar msg1 = { payload:parsedString[0][0]};\nvar msg2 = { payload:parsedString[1][0]};\nvar msg3 = { payload:parsedString[2][0]};\nreturn [msg1,msg2,msg3];\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 120,
+        "wires": [
+            [
+                "806c0b965904539a"
+            ],
+            [
+                "2ef6ae3569770155"
+            ],
+            [
+                "696cebe11a96cb59"
+            ]
+        ],
+        "outputLabels": [
+            "Temperatura",
+            "Pressão",
+            "Altitude"
+        ]
+    },
+    {
+        "id": "cde3c40dfb8475b3",
+        "type": "debug",
+        "z": "391b054734a8226e",
+        "name": "debug 92",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "806c0b965904539a",
+        "type": "ui_gauge",
+        "z": "391b054734a8226e",
+        "name": "",
+        "group": "633ffddb46034498",
+        "order": 2,
+        "width": 4,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 850,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2ef6ae3569770155",
+        "type": "ui_gauge",
+        "z": "391b054734a8226e",
+        "name": "",
+        "group": "633ffddb46034498",
+        "order": 4,
+        "width": 4,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Pressão",
+        "label": "Pa",
+        "format": "{{value}}",
+        "min": "30000",
+        "max": "200000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 840,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "696cebe11a96cb59",
+        "type": "ui_gauge",
+        "z": "391b054734a8226e",
+        "name": "",
+        "group": "633ffddb46034498",
+        "order": 6,
+        "width": 4,
+        "height": 4,
+        "gtype": "wave",
+        "title": "Altitude",
+        "label": "m",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 840,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "4bff601.4407ba",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.mqtt-dashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "633ffddb46034498",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "172a392f653c5f88",
+        "order": 1,
+        "disp": false,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "172a392f653c5f88",
+        "type": "ui_tab",
+        "name": "Sensores",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
