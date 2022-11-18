@@ -34,7 +34,7 @@
     {
         "id": "769e63f2a79e59af",
         "type": "subflow",
-        "name": "Lista redes",
+        "name": "Listar redes",
         "info": "",
         "category": "",
         "in": [
@@ -68,7 +68,7 @@
     {
         "id": "3b59c7cb71354422",
         "type": "subflow",
-        "name": "Lista Serviços",
+        "name": "Listar Serviços",
         "info": "",
         "category": "",
         "in": [
@@ -101,7 +101,7 @@
     {
         "id": "8201d03376b5cd85",
         "type": "subflow",
-        "name": "Lista Dispositivos",
+        "name": "Listar Dispositivos",
         "info": "",
         "category": "",
         "in": [
@@ -541,7 +541,7 @@
         "id": "172a392f653c5f88",
         "type": "ui_tab",
         "name": "Sensores",
-        "icon": "dashboard",
+        "icon": "fa-thermometer-full",
         "disabled": false,
         "hidden": false
     },
@@ -557,9 +557,9 @@
         "className": ""
     },
     {
-        "id": "dc4c1fe5e49894bf",
+        "id": "961fe3b242377077",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 1,
@@ -567,9 +567,9 @@
         "height": 1
     },
     {
-        "id": "1a2d649678c5573b",
+        "id": "dcf7c9f7b45a6964",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 3,
@@ -577,9 +577,9 @@
         "height": 1
     },
     {
-        "id": "1e75ec7195bda2d4",
+        "id": "7853591cbb8ec306",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 5,
@@ -587,9 +587,9 @@
         "height": 1
     },
     {
-        "id": "b44659f4d3199ff1",
+        "id": "81bd5b10f907b690",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 7,
@@ -597,9 +597,9 @@
         "height": 1
     },
     {
-        "id": "62475c010dee28c4",
+        "id": "ed802b35cbc33882",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 8,
@@ -607,9 +607,9 @@
         "height": 1
     },
     {
-        "id": "781ee1113d812a42",
+        "id": "b2f6b62c5aba473a",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 9,
@@ -617,9 +617,9 @@
         "height": 1
     },
     {
-        "id": "5ee58f3780a1427e",
+        "id": "e707342c50f2f31a",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 10,
@@ -627,9 +627,9 @@
         "height": 1
     },
     {
-        "id": "cf0b74e4db61b7d6",
+        "id": "3b616c864d9a4bbc",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 11,
@@ -637,9 +637,9 @@
         "height": 1
     },
     {
-        "id": "5a86b77601e979ce",
+        "id": "aa1b664859b02495",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 12,
@@ -647,9 +647,9 @@
         "height": 1
     },
     {
-        "id": "d81885c17d2a0bd0",
+        "id": "324307f49a108ec0",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 13,
@@ -657,9 +657,9 @@
         "height": 1
     },
     {
-        "id": "6d3c6a37744abd1b",
+        "id": "034040d49344d1a5",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 14,
@@ -667,9 +667,9 @@
         "height": 1
     },
     {
-        "id": "195f63f2bd4b9c83",
+        "id": "a61b8cc2aa8bd5b8",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 15,
@@ -677,9 +677,9 @@
         "height": 1
     },
     {
-        "id": "717e7a7321ff2ea0",
+        "id": "2fdd2bb223c2d351",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 16,
@@ -687,9 +687,9 @@
         "height": 1
     },
     {
-        "id": "e05540cc9664532b",
+        "id": "ab9dae51251085b8",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 17,
@@ -697,9 +697,9 @@
         "height": 1
     },
     {
-        "id": "3354592466727435",
+        "id": "c00b3fe47ede657f",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 18,
@@ -707,9 +707,9 @@
         "height": 1
     },
     {
-        "id": "d4342e691bd0a51a",
+        "id": "30c009077db19c7c",
         "type": "ui_spacer",
-        "z": "391b054734a8226e",
+        "z": "0d994888ecbec5a9",
         "name": "spacer",
         "group": "633ffddb46034498",
         "order": 19,
@@ -1141,6 +1141,16 @@
         "height": 0,
         "columns": [
             {
+                "field": "idDispositivo",
+                "title": "id Dispositivo",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
                 "field": "nome",
                 "title": "Nome",
                 "width": "",
@@ -1313,7 +1323,7 @@
         "id": "1a3c492ed44cb8bb",
         "type": "debug",
         "z": "0d994888ecbec5a9",
-        "name": "debug 71",
+        "name": "debug 2",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1330,7 +1340,7 @@
         "id": "69f00ec9c8106798",
         "type": "debug",
         "z": "0d994888ecbec5a9",
-        "name": "debug 72",
+        "name": "debug 4",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1400,7 +1410,7 @@
         "id": "2586f8b62f2c8535",
         "type": "debug",
         "z": "0d994888ecbec5a9",
-        "name": "debug 77",
+        "name": "debug 5",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1459,7 +1469,7 @@
         "id": "82c922e914e5e008",
         "type": "debug",
         "z": "0d994888ecbec5a9",
-        "name": "debug 79",
+        "name": "debug 8",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1527,7 +1537,7 @@
         "id": "e3748c473007c80b",
         "type": "debug",
         "z": "0d994888ecbec5a9",
-        "name": "debug 80",
+        "name": "debug 7",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1606,12 +1616,13 @@
         "id": "b1f02f8ef6aeb7b3",
         "type": "debug",
         "z": "0d994888ecbec5a9",
-        "name": "debug 81",
+        "name": "debug 3",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 1280,
@@ -1657,12 +1668,13 @@
         "id": "bcce7872ad5ad06e",
         "type": "debug",
         "z": "0d994888ecbec5a9",
-        "name": "debug 82",
+        "name": "debug 1",
         "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 820,
@@ -1722,7 +1734,7 @@
         "id": "23c5725ec0e1761e",
         "type": "debug",
         "z": "0d994888ecbec5a9",
-        "name": "debug 85",
+        "name": "debug 6",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1789,12 +1801,13 @@
         "id": "a04297adcbf79957",
         "type": "debug",
         "z": "0d994888ecbec5a9",
-        "name": "debug 87",
+        "name": "debug 10",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 560,
@@ -1866,7 +1879,7 @@
         "op2": "Ended",
         "op1type": "nul",
         "op2type": "str",
-        "duration": "10",
+        "duration": "2",
         "extend": false,
         "overrideDelay": false,
         "units": "s",
@@ -1874,7 +1887,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 830,
+        "x": 820,
         "y": 680,
         "wires": [
             [
@@ -1911,7 +1924,7 @@
         "id": "be3487e93f698a6a",
         "type": "debug",
         "z": "0d994888ecbec5a9",
-        "name": "debug 90",
+        "name": "debug 9",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1966,7 +1979,7 @@
         "correl": "",
         "expiry": "",
         "broker": "4bff601.4407ba",
-        "x": 560,
+        "x": 720,
         "y": 180,
         "wires": []
     },
@@ -1978,7 +1991,7 @@
         "bot": "18cdce9f3c0c7722",
         "saveDataDir": "",
         "filterCommands": false,
-        "x": 170,
+        "x": 310,
         "y": 200,
         "wires": [
             [
@@ -2004,7 +2017,7 @@
         "topic": "",
         "payload": "acende",
         "payloadType": "str",
-        "x": 370,
+        "x": 510,
         "y": 120,
         "wires": [
             [
@@ -2029,7 +2042,7 @@
         "topic": "",
         "payload": "apaga",
         "payloadType": "str",
-        "x": 370,
+        "x": 510,
         "y": 160,
         "wires": [
             [
@@ -2048,11 +2061,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
+        "x": 510,
         "y": 200,
         "wires": [
             [
-                "3c2d71a5.9bd0ee"
+                "3c2d71a5.9bd0ee",
+                "4f5454ce5b580c01"
             ],
             []
         ]
@@ -2068,17 +2082,34 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
+        "x": 500,
         "y": 260,
         "wires": [
             []
         ]
     },
     {
+        "id": "4f5454ce5b580c01",
+        "type": "debug",
+        "z": "4ca08a68e58fb9c9",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 240,
+        "wires": []
+    },
+    {
         "id": "79d2cdce.b40e64",
         "type": "mqtt in",
         "z": "391b054734a8226e",
-        "name": "LED in",
+        "name": "Sensor in",
         "topic": "tcc/iot/mqtt/led",
         "qos": "2",
         "datatype": "auto",
@@ -2086,7 +2117,7 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 230,
+        "x": 240,
         "y": 120,
         "wires": [
             [
@@ -2157,7 +2188,7 @@
         "id": "cde3c40dfb8475b3",
         "type": "debug",
         "z": "391b054734a8226e",
-        "name": "debug 92",
+        "name": "debug 12",
         "active": true,
         "tosidebar": true,
         "console": false,
